@@ -77,3 +77,4 @@ gem 'will_paginate-bootstrap'
 gem "font-awesome-rails"
 gem 'devise'
 gem "figaro"
+gem 'carrierwave', '~> 2.0'
