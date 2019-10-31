@@ -67,6 +67,20 @@
 
 <br />
 
+<div class="col-10 offset-1 row photos-list">
+  <% @place.photos.each do |photo| %>
+    <div class="col-12 col-sm-6 photo-item">
+      <%= image_tag(photo.picture.url) %>
+      <div class="booyah-box photo-caption">
+        <%= photo.caption %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<br />
+<br />
+
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
   <!-- Button trigger modal -->
@@ -76,13 +90,6 @@
 </div>
 
 <div class="clear"></div>
-
-<div class="row">
-  <% @place.photos.each do |photo| %>
-    <div class="col-12 col-sm-6">
-      <%= photo.caption %>
-      <%= image_tag(photo.picture.url) %>
-  <% end %>
 
 <div class="row">
   <% @place.comments.each do |comment| %>

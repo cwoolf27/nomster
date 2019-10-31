@@ -69,3 +69,22 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+.photos-list {
+  margin-bottom: 10px;
+}
+
+.photo-item {
+  img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+  }
+  .photo-caption {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    width: 250px;
+  }
+}
